@@ -9,6 +9,7 @@ import SidebarOption from "./SidebarOption";
 function Sidebar() {
   const [{ playlists }, dispatch] = useStateValue();
   console.log(playlists);
+  //   console.log(playlists.name);
   return (
     <div className="sidebar">
       <img
@@ -26,7 +27,7 @@ function Sidebar() {
         <SidebarOption option={playlist.name} />
       ))}
 
-      <SidebarOption title="Hip hop" />
+      {/* <SidebarOption title="Hip hop" />
       <SidebarOption title="blues" />
       <SidebarOption title="Rock" />
       <SidebarOption title="alternative" />
@@ -34,7 +35,7 @@ function Sidebar() {
       <SidebarOption title="afro beat" />
       <SidebarOption title="jazz" />
       <SidebarOption title="regae" />
-      <SidebarOption title="contempolary" />
+      <SidebarOption title="contempolary" /> */}
     </div>
   );
 }
