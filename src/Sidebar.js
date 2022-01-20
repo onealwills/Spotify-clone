@@ -7,9 +7,9 @@ import { useStateValue } from "./DataLayer";
 import SidebarOption from "./SidebarOption";
 
 function Sidebar() {
-  const [{ playlists }, dispatch] = useStateValue();
+  const [{ playlists }] = useStateValue();
   console.log(playlists);
-  //   console.log(playlists.name);
+  // console.log(playlists.name);
   return (
     <div className="sidebar">
       <img
@@ -23,11 +23,11 @@ function Sidebar() {
       <br />
       <strong className="sidebar__title">PLAYLIST</strong>
       <hr />
-      {playlists?.items?.map((playlist) => (
+      {/* {playlists?.items?.map((playlist) => (
         <SidebarOption option={playlist.name} />
-      ))}
+      ))} */}
 
-      {/* <SidebarOption title="Hip hop" />
+      <SidebarOption title="Hip hop" />
       <SidebarOption title="blues" />
       <SidebarOption title="Rock" />
       <SidebarOption title="alternative" />
@@ -35,7 +35,7 @@ function Sidebar() {
       <SidebarOption title="afro beat" />
       <SidebarOption title="jazz" />
       <SidebarOption title="regae" />
-      <SidebarOption title="contempolary" /> */}
+      <SidebarOption title="contempolary" />
     </div>
   );
 }
